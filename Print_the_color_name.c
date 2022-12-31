@@ -1,6 +1,5 @@
-
 #include<stdio.h>
-int main()
+int main() 
 {
     char c;
     scanf("%c",&c);
@@ -8,31 +7,32 @@ int main()
     {
         printf("Violet");
         }
-        else if(c=='I')
+        else if(c=='I') 
         {
             printf("Indigo");
             }
             else if(c=='B') 
             {
                 printf("Blue");
-                }
+                } 
                 else if(c=='G')
                 {
                     printf("Green");
-                    }
-                    else if(c=='Y')
+                    } 
+                    else if(c=='Y') 
                     {
-                        printf("Yellow");
-                        }
-                        else if(c=='O')
-                        {
-                            printf("Orange");
-                            }
-                            else if(c=='R') 
+                        printf("Yellow"); 
+                            } 
+                            else if(c=='O')
                             {
-                                printf("Red");
+                                printf("Orange");
                                 }
-                                else { 
-                                    printf("-1");
+                                else if(c=='R')
+                                {
+                                    printf("Red");
                                     }
-                                    }
+                                    else
+                                    {
+                                        printf("-1");
+                                        }
+                                        }
