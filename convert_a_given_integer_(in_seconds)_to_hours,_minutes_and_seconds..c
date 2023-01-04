@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int sec,m,s,h;
+    int sec,m,s,h; 
     scanf("%d",&sec);
     h=sec/3600;
     m=(sec-(3600*h))/60;
