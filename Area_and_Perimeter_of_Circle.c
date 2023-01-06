@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 int main()
 {
@@ -6,12 +5,10 @@ int main()
     scanf("%d",&r);
     float a,p;
     p=2*3.14*r;
-    a=3.14*r*r;
+    a=3.14*r*r; 
     printf("%.2f
 ",a);
     printf("%.2f
 ",p);
     
 }
-
-
