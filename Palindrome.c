@@ -11,6 +11,6 @@ int main()
         n=n/10; 
         }
         if(temp==sum)
-        printf("True");
-        else printf("False");
+        printf("Palindrome");
+        else printf("Not Palindrome");
 }
