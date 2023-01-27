@@ -1,15 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a,c,b;
+    int a,c,b; 
     scanf("%d%d",&a,&b);
     c=21-(a+b);
-    if(c<=10)
+    if(c<=10) 
     {
-    printf("%d",c);
-    }
-    else
-    {
-        printf("-1");
-    }
+        printf("%d",c);
+        }
+        else 
+        {
+            printf("-1");
+            }
+    
 }
