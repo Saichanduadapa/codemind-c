@@ -1,13 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int n,x,y,z;
-    scanf("%d%d%d%d",&n,&x,&y,&z);
-    if(n==x||n==y||n==z||n==x+y||n==x+z||n==y+z||n==x+y+z) 
-    { 
-        printf("YES");
-        }
-        else 
-        { printf("NO"); }
-    
+    int w,a,b,c;
+    scanf("%d%d%d%d",&w,&a,&b,&c);
+    if(w==a || w==b|| w==c|| w==a+b||w==a+c|| w==b+c||w==a+b+c)
+    printf("YES");
+    else
+    printf("NO");
 }
