@@ -1,17 +1,24 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n,m;
-    scanf("%d%d",&n,&m);
-    int a[n][m],i,j,c=0;
-    for(i=0;i<n;i++)
+    int m,n,a[100][100],i,j,sum=0;
+    scanf("%d",&m);
+    scanf("%d",&n);
+    for(i=0;i<m;i++)
     {
-        c=0;
-        for(j=0;j<m;j++)
+        for(j=0;j<n;j++)
         {
             scanf("%d",&a[i][j]);
-            c+=a[i][j];
         }
-        printf("%d ",c);
+    }
+    for(i=0;i<m;i++)
+    {
+        sum=0;
+        for(j=0;j<n;j++)
+        {
+           sum+=a[i][j]; 
+        }
+    printf("%d ",sum);
     }
 }
