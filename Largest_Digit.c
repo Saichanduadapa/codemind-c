@@ -1,16 +1,14 @@
 #include<stdio.h>
-int main()
-{
-    int num,reminder,largest=0;
-    scanf("%d",&num);
-    while(num>0)
-    {
-        reminder=num%10;
-        if(largest<reminder)
-        {
-            largest=reminder;
-        }
-        num=num/10;
+#include<string.h>
+#include<math.h>
+int main(){
+    char s[100];
+    scanf("%s",&s);
+    char  m=s[0];
+    for(int i=0;i<strlen(s)-1;i++){
+       if(m<s[i]){
+           m=s[i];
+       }
     }
-    printf("%d",largest);
+    printf("%c",m);
 }
