@@ -1,31 +1,25 @@
 #include<stdio.h>
-int factorial(int num)
-{
-    int sum=1,i;
-    for(i=num;i>=1;i--)
-    {
-        sum*=i;
+int fact(int n){
+    int s=1;
+    for(int i=1;i<=n;i++){
+        s*=i;
     }
-return sum;
+    return s;
 }
-int main()
-{
-    int n,r,temp,fact=0;
+int main(){
+    int n;
     scanf("%d",&n);
-    temp=n;
-    while(n)
-    {
-        r=n%10;
-        fact+=factorial(r);
-        n=n/10;
+    int temp=n;
+    int s=0;
+    while(temp!=0){
+        int r=temp%10;
+        s+=fact(r);
+        temp/=10;
     }
-    if(fact==temp)
-    {
-        printf("The number %d is a strong number",temp);
+    if(s==n){
+        printf("The number %d is a strong number",n);
     }
-    else
-    {
-        printf("The number %d is not a strong number",temp);
+    else{
+        printf("The number %d is not a strong number",n);
     }
-    
 }
