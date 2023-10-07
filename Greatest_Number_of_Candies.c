@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int n,a,ar[100],m=0,res[100],k=0;
+    int n,ar[100],k,m=0;
     scanf("%d",&n);
     for(int i=0;i<n;i++){
         scanf("%d",&ar[i]);
@@ -8,23 +8,13 @@ int main(){
             m=ar[i];
         }
     }
-    scanf("%d",&a);
+    scanf("%d",&k);
     for(int i=0;i<n;i++){
-        if(ar[i]+a>=m){
-            res[k]=1;
-            k++;
+        if(ar[i]+k>=m){
+            printf("True ");
         }
         else{
-            res[k]=0;
-            k++;
-        }
-    }
-    for(int i=0;i<n;i++){
-        if(res[i]==1){
-            printf("%s ","True");
-        }
-        else{
-            printf("%s ","False");
+            printf("False ");
         }
     }
 }
