@@ -1,16 +1,12 @@
 #include<stdio.h>
-int main()
-{
-    int a,b,c;
+int main(){
+    int a,b;
+    int n=0;
     scanf("%d%d",&a,&b);
-    c=a;
-    while(c)
-    {
-        if(a%c==0 && b%c==0)
-    {
-        printf("%d",c);
-        break;
+    for(int i=1;i<=b;i++){
+        if (a%i==0 && b%i==0){
+            n=i;
+        }
     }
-    c--;
-    }
+    printf("%d",n);
 }
