@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int n , fact = 1;
+    scanf("%d",&n);
+    while(n){
+        fact *= n;
+        n-=1;
+    }
+    printf("%d",fact);
+}
